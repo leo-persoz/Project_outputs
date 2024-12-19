@@ -17,12 +17,7 @@ editor_options:
 # install/load packages, load dataframe(s)
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse,
-               readxl,
                plotly,
-               reactable,
-               gt,
-               gtsummary,
-               gtExtras,
                here)
 
 graphs_dataset <- read_csv(here("C:/Kenya_anaylsis_Rproject/Project_outputs/data/graphs_dataset.csv"))
@@ -106,28 +101,11 @@ Kacheliba and Sigor District Hospitals.
 ## Descriptive analysis
 
 A total of 401 WOCBP were interviewed from Kacheliba and Sigor District
-Hospitals. Socio-demographic characteristics are found in Table 1
-(numeric variables) and Table 2 (categorical variables).
+Hospitals. Socio-demographic characteristics are found in Table 1.
 
 ##### Table 1
 
 ```{r Table 1, echo=FALSE}
-htmltools::tags$iframe(
-  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_num_vars_table.html"),
-  width = "100%",
-  height = "250px",
-  style = "border:none;"
-  )
-```
-
-Concerning the age of participants, the distribution is a little
-negatively skewed, due to a higher number of participants of young age.
-Participants also show a similar number of birth(s) and number of
-children they are living with.
-
-##### Table 2
-
-```{r Table 2, echo=FALSE}
 htmltools::tags$iframe(
   src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_cat_var_table.html"),
   width = "100%",
@@ -137,6 +115,8 @@ htmltools::tags$iframe(
 ```
 
 #### *Socio-demographic variables*
+
+Concerning the age of participants, close to half of the sample is between 18 and 24 years old, and the teenager category is the least represented modality within the sample (21 participants, 5.2%). Most participants gave birth to 1 or 2 children (n = 166, 41.4%), which tends to be quite in line with the age distribution of the sample (i.e. 43.1% of participants have between 18 and 24 years old). 
 
 A majority of participants are living in rural areas (92.3%), sedentary
 (65.8%), and of Christian confession (96.8%). Furthermore, Almost half
