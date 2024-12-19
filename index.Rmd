@@ -113,7 +113,7 @@ Hospitals. Socio-demographic characteristics are found in Table 1
 
 ```{r Table 1, echo=FALSE}
 htmltools::tags$iframe(
-  src = here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_num_vars_table.html"),
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_num_vars_table.html"),
   width = "100%",
   height = "250px",
   style = "border:none;"
@@ -129,7 +129,7 @@ children they are living with.
 
 ```{r Table 2, echo=FALSE}
 htmltools::tags$iframe(
-  src = here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_cat_var_table.html"),
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_cat_var_table.html"),
   width = "100%",
   height = "600px",
   style = "border:none;"
