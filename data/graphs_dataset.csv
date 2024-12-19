@@ -1,0 +1,402 @@
+"","f_side_eff_combined","use_type"
+"1","Heavier bleeding, Spotting",NA
+"2","Heavier bleeding",NA
+"3","Irregular bleeding, Weight loss","5"
+"4","Heavier bleeding",NA
+"5","Heavier bleeding, Weight loss, Delayed return to fertility",NA
+"6","Heavier bleeding, Delayed return to fertility","5"
+"7","Other",NA
+"8","Heavier bleeding, Weight gain, General body weakness","4"
+"9","Heavier bleeding, Increased menstrual cramping",NA
+"10","General body weakness","4"
+"11","Heavier bleeding, General body weakness",NA
+"12","Other",NA
+"13","Irregular bleeding","4"
+"14",NA,NA
+"15","Irregular bleeding","5"
+"16","Irregular bleeding","5"
+"17","Heavier bleeding",NA
+"18",NA,NA
+"19","Spotting, Uterine cramping/Lower abdominal pain","5"
+"20","Infertility/sterility","11"
+"21","Other",NA
+"22","Heavier bleeding","1"
+"23","Heavier bleeding",NA
+"24","Uterine cramping/Lower abdominal pain","5"
+"25","Heavier bleeding, Weight gain, Weight loss","5"
+"26","Delayed return to fertility",NA
+"27","Heavier bleeding, Weight loss, Delayed return to fertility",NA
+"28","Heavier bleeding, Weight loss, Headaches, Delayed return to fertility",NA
+"29","Heavier bleeding, Weight gain, Increased menstrual cramping, Delayed return to fertility","4"
+"30","Irregular bleeding, Weight loss, Headaches","5"
+"31","Less bleeding or no bleeding, Irregular bleeding, Spotting, Uterine cramping/Lower abdominal pain, Weight gain","4"
+"32","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"33","Heavier bleeding, Weight loss, General body weakness",NA
+"34","Heavier bleeding, Weight loss",NA
+"35","Heavier bleeding",NA
+"36","Heavier bleeding, Weight loss",NA
+"37","Heavier bleeding",NA
+"38","Heavier bleeding","4"
+"39","Heavier bleeding","4"
+"40","Delayed return to fertility",NA
+"41","Heavier bleeding","11"
+"42","Heavier bleeding","4"
+"43","Heavier bleeding, Irregular bleeding, Weight loss","5"
+"44","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"45","Weight loss, Increased menstrual cramping, Other","4"
+"46","Irregular bleeding, Uterine cramping/Lower abdominal pain, Increased menstrual cramping",NA
+"47","Heavier bleeding, Weight gain, Lowered sex drive",NA
+"48","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight gain, Weight loss",NA
+"49","Uterine cramping/Lower abdominal pain, General body weakness",NA
+"50","Weight gain, General body weakness","5"
+"51","Weight gain, General body weakness, Other","5"
+"52","Less bleeding or no bleeding","4"
+"53","Weight gain","11"
+"54","Weight loss, Headaches, General body weakness","5"
+"55","Infertility/sterility","4"
+"56","Heavier bleeding",NA
+"57","Uterine cramping/Lower abdominal pain",NA
+"58","Irregular bleeding, Increased menstrual cramping","6"
+"59","Uterine cramping/Lower abdominal pain, Increased menstrual cramping",NA
+"60","Weight loss, Increased menstrual cramping","5"
+"61",NA,NA
+"62","Delayed return to fertility","6"
+"63","Headaches, General body weakness","5"
+"64","General body weakness","5"
+"65","Other",NA
+"66","General body weakness",NA
+"67","Heavier bleeding, General body weakness","5"
+"68","General body weakness",NA
+"69","Heavier bleeding",NA
+"70","Spotting","4"
+"71","Less bleeding or no bleeding, Heavier bleeding, Other","4"
+"72","Less bleeding or no bleeding, General body weakness","5"
+"73","Spotting","6"
+"74","Less bleeding or no bleeding, Heavier bleeding, Other","4"
+"75","Other",NA
+"76","General body weakness","5"
+"77","Heavier bleeding","5"
+"78","Spotting, Uterine cramping/Lower abdominal pain","6"
+"79","Heavier bleeding",NA
+"80","Heavier bleeding","5"
+"81","Heavier bleeding",NA
+"82","Heavier bleeding","5"
+"83","Heavier bleeding, Irregular bleeding, Lowered sex drive",NA
+"84","Less bleeding or no bleeding, Heavier bleeding",NA
+"85","Heavier bleeding, Weight gain, General body weakness","4"
+"86","Heavier bleeding, Irregular bleeding, Spotting, General body weakness","4"
+"87",NA,NA
+"88","Heavier bleeding",NA
+"89","Other",NA
+"90","General body weakness",NA
+"91","Heavier bleeding",NA
+"92","Heavier bleeding","5"
+"93","Heavier bleeding","11"
+"94","Heavier bleeding","5"
+"95","Heavier bleeding","5"
+"96","Heavier bleeding","5"
+"97","Headaches, General body weakness","4"
+"98","Heavier bleeding","5"
+"99","Nausea/vomiting, General body weakness","4"
+"100","Other","4"
+"101","General body weakness","4"
+"102","Other","5"
+"103","Heavier bleeding",NA
+"104","Heavier bleeding, General body weakness",NA
+"105","Uterine cramping/Lower abdominal pain, Infertility/sterility",NA
+"106","Irregular bleeding, Increased menstrual cramping","5"
+"107","Heavier bleeding, Uterine cramping/Lower abdominal pain","4"
+"108","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"109","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"110","Heavier bleeding, Uterine cramping/Lower abdominal pain, Delayed return to fertility",NA
+"111","Weight loss",NA
+"112","Method gets lost inside the body","5"
+"113","Spotting, Weight gain, Other",NA
+"114","Other","4"
+"115","Other","4"
+"116","Other",NA
+"117","Heavier bleeding, Spotting, Weight loss, Headaches","5"
+"118","Heavier bleeding, General body weakness",NA
+"119","Heavier bleeding, Other","4"
+"120","Heavier bleeding, Weight loss",NA
+"121","Delayed return to fertility",NA
+"122","Heavier bleeding, Weight loss","4"
+"123","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss","5"
+"124","Heavier bleeding, Delayed return to fertility",NA
+"125","Heavier bleeding, Delayed return to fertility","5"
+"126","Heavier bleeding, Weight loss","5"
+"127","Heavier bleeding",NA
+"128","Heavier bleeding, Weight loss, Delayed return to fertility, Lowered sex drive",NA
+"129","Heavier bleeding",NA
+"130",NA,NA
+"131","Heavier bleeding","6"
+"132","Heavier bleeding, Weight loss","3"
+"133","Heavier bleeding, Lowered sex drive",NA
+"134","Heavier bleeding, Weight loss","5"
+"135","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"136","Heavier bleeding",NA
+"137","Heavier bleeding","5"
+"138","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"139","Heavier bleeding",NA
+"140","Irregular bleeding, General body weakness","5"
+"141","Heavier bleeding, Irregular bleeding","6"
+"142","Weight loss","4"
+"143","Heavier bleeding, Irregular bleeding, Increased menstrual cramping","5"
+"144","Heavier bleeding, Increased menstrual cramping","4"
+"145","Weight gain",NA
+"146","Increased menstrual cramping, Delayed return to fertility, General body weakness","5"
+"147","Heavier bleeding, Irregular bleeding, Increased menstrual cramping","5"
+"148","Irregular bleeding, Increased menstrual cramping, Vaginal dryness","4"
+"149","Method gets lost inside the body, General body weakness",NA
+"150","Heavier bleeding","4"
+"151",NA,"5"
+"152","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"153",NA,"6"
+"154","Heavier bleeding, General body weakness",NA
+"155","Other","5"
+"156","Irregular bleeding","5"
+"157","Other",NA
+"158","General body weakness",NA
+"159",NA,"5"
+"160","Heavier bleeding, Weight gain, Weight loss, Increased menstrual cramping","5"
+"161","Heavier bleeding, Infection, Increased menstrual cramping, Delayed return to fertility","5"
+"162","Heavier bleeding, Headaches, Infection, Increased menstrual cramping, Delayed return to fertility","5"
+"163","Irregular bleeding, Infection, Delayed return to fertility","5"
+"164","Heavier bleeding, Irregular bleeding, Facial spotting","4"
+"165","Heavier bleeding, Uterine cramping/Lower abdominal pain, Headaches","5"
+"166","Heavier bleeding, Headaches, Delayed return to fertility",NA
+"167","Heavier bleeding, Weight gain, Weight loss","5"
+"168","Infertility/sterility","6"
+"169","Heavier bleeding, Method gets lost inside the body",NA
+"170","Heavier bleeding",NA
+"171","Delayed return to fertility","5"
+"172","Method gets lost inside the body","5"
+"173","Infertility/sterility","5"
+"174","Less bleeding or no bleeding, Heavier bleeding",NA
+"175","Heavier bleeding",NA
+"176",NA,NA
+"177","Weight loss","5"
+"178","Heavier bleeding, Spotting","5"
+"179","Heavier bleeding",NA
+"180","Heavier bleeding","11"
+"181","Heavier bleeding","4"
+"182","Heavier bleeding","11"
+"183","Heavier bleeding","11"
+"184","Heavier bleeding","11"
+"185","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss, Delayed return to fertility",NA
+"186","Heavier bleeding",NA
+"187",NA,"5"
+"188",NA,NA
+"189",NA,"5"
+"190","Heavier bleeding","5"
+"191",NA,"5"
+"192","Heavier bleeding","5"
+"193",NA,"5"
+"194",NA,NA
+"195",NA,NA
+"196","Other",NA
+"197","Heavier bleeding","5"
+"198","Heavier bleeding","5"
+"199","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss","4"
+"200","Other","11"
+"201","Heavier bleeding",NA
+"202","Heavier bleeding","5"
+"203","Heavier bleeding",NA
+"204","Weight gain",NA
+"205","Heavier bleeding",NA
+"206","Heavier bleeding",NA
+"207","Irregular bleeding, Spotting, Delayed return to fertility","4"
+"208","Irregular bleeding","11"
+"209","Irregular bleeding, Infection",NA
+"210","Irregular bleeding","4"
+"211","Other","5"
+"212","Heavier bleeding, General body weakness","5"
+"213","Heavier bleeding, General body weakness","5"
+"214","Other",NA
+"215","Other",NA
+"216","Heavier bleeding, Headaches, Infection","4"
+"217","Irregular bleeding","5"
+"218","Other","5"
+"219",NA,NA
+"220","Delayed return to fertility",NA
+"221","Heavier bleeding","4"
+"222","Heavier bleeding","4"
+"223","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"224","Heavier bleeding","5"
+"225","Heavier bleeding, Method gets lost inside the body",NA
+"226","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight gain","5"
+"227","Heavier bleeding","5"
+"228","Heavier bleeding","4"
+"229","Less bleeding or no bleeding, Irregular bleeding",NA
+"230","Heavier bleeding, Irregular bleeding, Spotting","5"
+"231",NA,NA
+"232",NA,"4"
+"233","Irregular bleeding, Weight loss, Infertility/sterility","4"
+"234",NA,"4"
+"235",NA,NA
+"236",NA,"4"
+"237",NA,NA
+"238","General body weakness","5"
+"239","Heavier bleeding, Infertility/sterility","9"
+"240","Spotting, Uterine cramping/Lower abdominal pain","5"
+"241","Heavier bleeding, Uterine cramping/Lower abdominal pain","6"
+"242","Heavier bleeding, Infection","4"
+"243","Less bleeding or no bleeding",NA
+"244","Heavier bleeding, Weight loss","4"
+"245","Weight loss",NA
+"246","Weight loss","5"
+"247","Irregular bleeding","5"
+"248",NA,NA
+"249",NA,NA
+"250",NA,NA
+"251",NA,"5"
+"252",NA,"5"
+"253","Heavier bleeding","9"
+"254","Heavier bleeding, Weight loss",NA
+"255","Heavier bleeding, Weight gain, Headaches, Vaginal dryness, Infertility/sterility","5"
+"256","Heavier bleeding, Weight gain, Weight loss",NA
+"257","Irregular bleeding, Weight loss, Headaches","5"
+"258","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"259","Irregular bleeding, Weight loss, Headaches","5"
+"260",NA,NA
+"261","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight gain, Headaches","5"
+"262","Delayed return to fertility","5"
+"263","Heavier bleeding, Increased menstrual cramping",NA
+"264","Delayed return to fertility",NA
+"265","Heavier bleeding, Delayed return to fertility",NA
+"266","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"267","Heavier bleeding, Weight loss","5"
+"268","Heavier bleeding, Weight loss",NA
+"269","Heavier bleeding",NA
+"270","Heavier bleeding",NA
+"271","Irregular bleeding","4"
+"272","Irregular bleeding, Spotting",NA
+"273","Infertility/sterility",NA
+"274","Heavier bleeding","11"
+"275","Less bleeding or no bleeding","5"
+"276","Heavier bleeding","4"
+"277","Delayed return to fertility","5"
+"278","Spotting","4"
+"279","Heavier bleeding","5"
+"280","Less bleeding or no bleeding","5"
+"281","Heavier bleeding",NA
+"282","Heavier bleeding, Uterine cramping/Lower abdominal pain","6"
+"283","Spotting","5"
+"284","Heavier bleeding, Infertility/sterility, General body weakness",NA
+"285","Heavier bleeding, Headaches, General body weakness",NA
+"286","Infertility/sterility, General body weakness",NA
+"287","Heavier bleeding, Delayed return to fertility",NA
+"288","Delayed return to fertility, Other",NA
+"289","Heavier bleeding, Weight loss, Delayed return to fertility",NA
+"290","Delayed return to fertility",NA
+"291","Heavier bleeding, Spotting, General body weakness, Other",NA
+"292","Other",NA
+"293","Heavier bleeding, General body weakness",NA
+"294","Weight loss, General body weakness","4"
+"295","Irregular bleeding",NA
+"296","Irregular bleeding, Spotting","5"
+"297","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss",NA
+"298","Less bleeding or no bleeding, Other","6"
+"299","Spotting","5"
+"300","Less bleeding or no bleeding, Increased menstrual cramping",NA
+"301","Irregular bleeding","4"
+"302",NA,NA
+"303","Heavier bleeding","4"
+"304","Heavier bleeding","12"
+"305",NA,"4"
+"306","Heavier bleeding",NA
+"307","Heavier bleeding","5"
+"308","Weight gain","5"
+"309","Other",NA
+"310","Heavier bleeding","6"
+"311","Heavier bleeding",NA
+"312","Heavier bleeding","5"
+"313","Heavier bleeding, Method gets lost inside the body",NA
+"314","Heavier bleeding, Method gets lost inside the body","5"
+"315","Heavier bleeding, Other",NA
+"316","Heavier bleeding",NA
+"317","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"318","Heavier bleeding, Uterine cramping/Lower abdominal pain","5"
+"319","Heavier bleeding, Increased menstrual cramping","4"
+"320","Heavier bleeding",NA
+"321","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss",NA
+"322","Irregular bleeding","5"
+"323","Infertility/sterility",NA
+"324","Weight loss",NA
+"325","Heavier bleeding, Irregular bleeding",NA
+"326","Weight loss","4"
+"327","General body weakness","5"
+"328","Infertility/sterility",NA
+"329","Headaches, General body weakness",NA
+"330","General body weakness",NA
+"331","Other","6"
+"332","Infection",NA
+"333","Other","4"
+"334","Heavier bleeding, Lowered sex drive","4"
+"335","Heavier bleeding, Spotting","6"
+"336","Less bleeding or no bleeding, Heavier bleeding, Irregular bleeding, Uterine cramping/Lower abdominal pain",NA
+"337","Heavier bleeding, Uterine cramping/Lower abdominal pain, Weight loss, General body weakness",NA
+"338","Heavier bleeding","4"
+"339","Other",NA
+"340","Spotting","5"
+"341","Heavier bleeding",NA
+"342","Heavier bleeding","5"
+"343","Less bleeding or no bleeding, Uterine cramping/Lower abdominal pain","5"
+"344",NA,NA
+"345","Delayed return to fertility",NA
+"346","Heavier bleeding","5"
+"347","Heavier bleeding","5"
+"348","Heavier bleeding",NA
+"349","Heavier bleeding, General body weakness",NA
+"350","Heavier bleeding, Spotting, Other","5"
+"351","Other",NA
+"352","Heavier bleeding",NA
+"353","Heavier bleeding, Increased menstrual cramping",NA
+"354","Heavier bleeding, Irregular bleeding, Uterine cramping/Lower abdominal pain, Increased menstrual cramping",NA
+"355","Heavier bleeding, Uterine cramping/Lower abdominal pain, Increased menstrual cramping",NA
+"356","Heavier bleeding, Uterine cramping/Lower abdominal pain",NA
+"357","Heavier bleeding, Uterine cramping/Lower abdominal pain","6"
+"358",NA,NA
+"359","General body weakness",NA
+"360","Heavier bleeding, Delayed return to fertility",NA
+"361","Irregular bleeding",NA
+"362","Irregular bleeding, Spotting","5"
+"363","Delayed return to fertility, Infertility/sterility",NA
+"364","Less bleeding or no bleeding",NA
+"365","Irregular bleeding, Uterine cramping/Lower abdominal pain, Delayed return to fertility","5"
+"366","Weight loss, Headaches, General body weakness","4"
+"367",NA,NA
+"368","Irregular bleeding","5"
+"369","Heavier bleeding","5"
+"370","General body weakness",NA
+"371",NA,"5"
+"372","Heavier bleeding, Irregular bleeding, Weight gain, Weight loss, Infertility/sterility, Other",NA
+"373",NA,NA
+"374",NA,"5"
+"375",NA,"5"
+"376",NA,NA
+"377",NA,"4"
+"378","Delayed return to fertility","10"
+"379","Heavier bleeding","5"
+"380","Heavier bleeding","5"
+"381","Heavier bleeding, Irregular bleeding","4"
+"382","Heavier bleeding","5"
+"383","Heavier bleeding","10"
+"384","Heavier bleeding",NA
+"385","Heavier bleeding, Irregular bleeding",NA
+"386","Heavier bleeding","4"
+"387","Heavier bleeding","10"
+"388","Heavier bleeding",NA
+"389","Heavier bleeding, Weight gain, Weight loss","4"
+"390","Method gets lost inside the body","4"
+"391","Uterine cramping/Lower abdominal pain, Weight loss, Headaches, Other","5"
+"392","Other","5"
+"393","Heavier bleeding, Weight loss","5"
+"394","Less bleeding or no bleeding, Weight loss","6"
+"395","Heavier bleeding, Weight loss, Headaches",NA
+"396","Heavier bleeding, Weight gain, Weight loss","5"
+"397","Heavier bleeding, Irregular bleeding, Weight gain, Weight loss","5"
+"398","Heavier bleeding, Irregular bleeding, Weight gain, Weight loss","4"
+"399","Heavier bleeding, Irregular bleeding, Weight gain, Weight loss, Headaches","8"
+"400",NA,"5"
+"401","Heavier bleeding, Irregular bleeding, Weight gain",NA

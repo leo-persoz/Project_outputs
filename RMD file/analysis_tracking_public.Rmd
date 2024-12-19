@@ -1,0 +1,394 @@
+---
+title: "CONTRACEPTIVE USE IN MEDICAL CONTEXT: QUANTITATIVE REPORT"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    toc: true
+    self_contained: TRUE
+author: "Léo Persoz (DNDi, UNIGE)"
+date: "December 2024"
+editor_options: 
+  chunk_output_type: inline
+  markdown: 
+    wrap: 72
+---
+
+```{r install, include=FALSE}
+# install/load packages, load dataframe(s)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse,
+               readxl,
+               plotly,
+               reactable,
+               gt,
+               gtsummary,
+               gtExtras,
+               here)
+
+graphs_dataset <- read_csv(here("C:/Kenya_anaylsis_Rproject/Project_outputs/data/graphs_dataset.csv"))
+```
+
+# 2. Methodology
+
+### 2.1 Study design and period
+
+This study consists in the quantitative phase of a mixed methods
+research project on the topic of medically indicated contraceptive use.
+The project relies on a explanatory sequential design, and its
+quantitative strands follows a hospital-based cross-sectional design
+implemented through a structured survey. It was administered between the
+21 and 25 October 2024, and collects information on the topic of
+intention to use contraceptives when indicated alongside medical
+treatment for leishmaniasis. Before being triangulated with the
+qualitative results, the findings presented in this report will be used
+in order to refine tools related to the qualitative phase of the study
+(i.e. in depth interview guide and focus-group discussion guide), as
+well as inform the sampling of in depth interview participants.
+
+### 2.2 Study area
+
+The questionnaire was administered in the only two health centers
+delivering treatment for leishmaniasis situated in West Pokot, Kenya:
+Kacheliba and Sigor District Hospitals.
+
+### 2.3 Inclusion and exclusion criteria
+
+#### Inclusion criteria
+
+-   All women of reproductive age frequenting the Kacheliba or Sigor
+    District Hospitals
+
+### 2.4 Sample size calculation and sampling procedure
+
+### 2.5 Data collection instrument
+
+### 2.6 Data processing and analysis
+
+### 2.7 Quality control
+
+### 2.8 Operational definitions
+
+-   Economic status
+
+-   Knowledge of Kala-azar
+
+-   Experience of Kala-azar
+
+-   N of consequences feared
+
+-   contraceptive knowledge
+
+    -   0-1 low
+
+    -   2-4 moderate
+
+    -  > 5 high
+
+-   fear of side effects
+
+    -   total of side effect feared divided by the total of side effects
+        known, varying between 0 and 1.
+
+        -   0-0.33 low fear
+
+        -   0.34-0.66 moderate fear
+
+        -   0.67-1 high fear
+
+-   CU approval
+
+-   CU agency
+
+-   Decision maker
+
+# 3. Results
+
+## Descriptive analysis
+
+A total of 401 WOCBP were interviewed from Kacheliba and Sigor District
+Hospitals. Socio-demographic characteristics are found in Table 1
+(numeric variables) and Table 2 (categorical variables).
+
+##### Table 1
+
+```{r Table 1, echo=FALSE}
+htmltools::tags$iframe(
+  src = here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_num_vars_table.html"),
+  width = "100%",
+  height = "250px",
+  style = "border:none;"
+  )
+```
+
+Concerning the age of participants, the distribution is a little
+negatively skewed, due to a higher number of participants of young age.
+Participants also show a similar number of birth(s) and number of
+children they are living with.
+
+##### Table 2
+
+```{r Table 2, echo=FALSE}
+htmltools::tags$iframe(
+  src = here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_cat_var_table.html"),
+  width = "100%",
+  height = "600px",
+  style = "border:none;"
+  )
+```
+
+#### *Socio-demographic variables*
+
+A majority of participants are living in rural areas (92.3%), sedentary
+(65.8%), and of Christian confession (96.8%). Furthermore, Almost half
+participants did not complete any level of formal education (48.1%) ,
+and a quarter did complete primary education (25.7%). Most participants
+were considered as having a low economic status (81%) or medium economic
+status (18.2%).
+
+#### *Knowledge and perceptions of leishmaniasis*
+
+Knowledge of leishmaniasis was quite high among participants, with 33.4%
+of the sample knowing both at least a mean of transmission and one
+symptom, and 29.4% of participants who either never heard about
+leishmaniasis, or did not know any symptom nor means of transmission.
+Most participants had some experience with leishmaniasis, with 56.6% of
+the sample having heard or seen someone sick from leishmaniasis, and
+21.7% heard or seen someone die from this disease. Furhtermore,
+participants showed relatively low concerns about consequences of
+leishmaniasis treatment, with above 70% of participants evaluated as
+having no or low concerns. Pain at the injection site (31.7%) and
+prolonged hospital stay (26.9%) were the most frequent concerns
+mentioned by participants.
+
+#### *Contraceptive use variables*
+
+Approximately a third of participants reported using contraceptives when
+interviewed (34.7%), while this rate jumps to 55.9% when reporting about
+ever usage of contraceptives. Figure 1 describes the kind of
+contraceptives methods reported to be used by participants who ever used
+contraceptives. Three quarter of participants reported being the
+decision makers related their use of contraceptives (75.1%), and 10.7%
+reported to have been pressured to give birth at some point in the past.
+
+##### Figure 1
+
+
+```{r Figure 1, echo=FALSE}
+N_ever_user <- sum(!is.na(graphs_dataset$use_type))
+
+univar_use_type <- 
+  graphs_dataset %>% 
+  mutate(use_type = case_when(use_type == 1 ~ "Female sterilization",
+                              use_type == 2 ~ "Male sterilization",
+                              use_type == 3 ~ "Intra-uterine device (IUD)",
+                              use_type == 4 ~ "Injectables",
+                              use_type == 5 ~ "Implants",
+                              use_type == 6 ~ "Pills",
+                              use_type == 7 ~ "Condom",
+                              use_type == 8 ~ "Female condom",
+                              use_type == 9 ~ "Emergency contraception",
+                              use_type == 10 ~ "Standard days method",
+                              use_type == 11 ~ "Lactational amenorrhea method",
+                              use_type == 12 ~ "Other")) %>%
+  count(use_type) %>% 
+  mutate(percentage = n / N_ever_user * 100,
+         tooltip_label = paste(use_type, " (n = ", n, "): ", round(percentage, 2), "%", sep = "")) %>%
+  filter(!is.na(use_type)) %>% 
+  ggplot(aes(x = reorder(use_type, n), y = percentage, fill = use_type, text = tooltip_label)) +
+  geom_col() +
+  labs(title = "Type of modern contraceptive methods used among ever-users",
+       x = "Type of modern contraceptive method",
+       y = "Percentage") +
+  theme(legend.position = "none") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+plotly_univar_use_type <- ggplotly(univar_use_type, tooltip = "text")
+
+plotly_univar_use_type
+```
+
+More than three quarter of participants reported being strongly likely
+(48.1%) or likely (30.7%) to use contraceptives for family planning in
+the future. In the context of clinical trials, 81% of participants
+reported being either strongly likely (50.1%) or likely (30.9%) to
+choose a treatment regiment that requires to use a contraceptive method
+during treatment over one that do not require contraceptive use,
+provided that the former treatment is less disruptive (in terms of
+number of injections, length of hospital stay and side effects) - this
+rate jumps to 85.1% (strongly likely: 58.4%, likely: 26.7%) in the
+context of standard treatment (i.e. outside clinical trials).
+
+#### *Psycho-social variables*
+
+Participants mostly displayed moderate contraceptive knowledge (72.6%),
+and had high fear of side effects(45.4%). The kind of feared side
+effects are displayed in Figure 2. Concerning contraceptive use
+approval, three quarter of the sample displayed high approval (75. 8%) -
+however, 45.6% of participants described a high agency regarding
+contraceptive use, and 42.4% were categorized as having moderate agency.
+
+##### Figure 2
+
+```{r Figure 2, echo=FALSE}
+univar_fear_side_eff <- 
+  graphs_dataset %>%
+  # Split combined_reasons into individual reasons, while retaining the original structure
+  mutate(f_side_eff_combined_list = str_split(f_side_eff_combined, ",\\s*")) %>%
+  unnest(f_side_eff_combined_list) %>%  # Create a column of individual reasons
+  filter(!is.na(f_side_eff_combined_list)) %>%  
+  count(f_side_eff_combined_list) %>% 
+  mutate(percentage = n / sum(n) * 100, # nrow(num_data_renamed) inserted manually to avoid counting 
+         # from split reasons rather than the total sample size
+         tooltip = paste(f_side_eff_combined_list, " (n = ", n, ") ", round(percentage, 2), "%", sep = "")) %>% 
+  ggplot(aes(x = reorder(f_side_eff_combined_list, n), y = n, fill = f_side_eff_combined_list, text = tooltip)) +
+  geom_col() +
+  labs(x = "Side effects feared", y = "Count", title = "Counts of side effects feared by respondents") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = "none")
+
+plotly_univar_fear_side_eff <- ggplotly(univar_fear_side_eff, tooltip = "text")
+
+plotly_univar_fear_side_eff
+```
+
+## Binary analysis: difference in proportions
+
+In order to establish whether a significant difference exists between
+participants reporting future intentions to use contraceptives for
+family planning and intentions to use some contraceptive methods in the
+context of standard treatment for leishmaniasis, a McNemar test was
+applied these two proportions. To do so, both of these variables were
+binarized - as shown in Table 2, both were originally recorded using a 4
+point likert-scale. The results of this test are found in Table 3.
+
+##### Table 3
+
+```{r echo=FALSE}
+htmltools::tags$iframe(
+  src = here::here(
+    "C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/final_mcnemar_gt_treat.html"),
+  width = "100%",
+  height = "325px",
+  style = "border:none;"
+  )
+```
+
+
+## Multivariate analysis
+
+Table 4-6 display three logistical regression models that differ
+structurally because of their respective outcomes: Table 4 includes
+intentions to use contraceptives alongside medical treatment as outcome,
+Table 5 includes future intentions to use contraceptives as outcome,
+while Table 6 includes ever use of contraceptive as outcome. These
+models have been set up in order to compare the difference in predictors
+for each outcome, thereby allowing to identify difference in factors
+influencing contraceptives use intentions (and behaviour for ever use)
+in these different contexts (for medical reasons and for family planning
+purpose).
+
+##### Table 4
+
+```{r echo=FALSE}
+htmltools::tags$iframe(
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_treatment_ord2.html"),
+  width = "100%",
+  height = "600px",
+  style = "border:none;"
+  )
+```
+
+Concerning the psychosocial predictors included in the model described
+in Table 4, all categories related to the approval of contraceptive use
+and agency with regard to contraceptive use are highly negatively
+associated with intention to use contraceptives alongside medical
+treatment (all p-values under 0.01) - fear of side effects seems to be
+positively associated with the outcome (although in a less significant
+manner as shown by the p-value), although only when observing the
+moderate category. Similarly, ever use of contraceptives is also
+positively associated with the outcome. However, it is important to note
+that the ability of participants to decide using contraceptives for
+herself is not associated with intention to use contraceptives alongside
+medical treatment, as shown by the odds ration and p-value related to
+this variable. Furthermore, knowledge of contraceptive shows no
+association with intention to use contraceptives alongside medical
+treatment.
+
+For demographic predictors, age and number of children are both highly
+associated with intention to use contraceptive alongside medical
+treatment, although in different directions (negatively and positively,
+respectively). Somehow surprisingly, higher economic status tends to be
+negatively associated with the outcome, when one could expect it to be
+positively associated.
+
+Finally, disease related predictors also show some interesting results:
+as the number of concerns related to treatment consequences, intentions
+to use contraceptives for medical reasons increase. This is not
+surprising, since the treatment regiment for leishmaniasis which does
+involve using contraceptives present more negative consequences than the
+regiment requiring to use contraceptives (a precision which was stated
+in the prompt of the question related to intention to use contraceptives
+alongside medical treatment). Finally, being knowledgeable about the
+symptoms of leishmaniasis, in comparison to being knowledgeable about
+both symptoms and means of transmission of leishmaniasis, is positively
+associated with the outcome.
+
+##### Table 5
+
+```{r Table 5, echo=FALSE}
+htmltools::tags$iframe(
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_intentionFP_ord.html"),
+  width = "100%",
+  height = "600px",
+  style = "border:none;"
+  )
+```
+
+##### Table 6
+
+```{r Table 6, echo=FALSE}
+htmltools::tags$iframe(
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_ever_ord.html"),
+  width = "100%",
+  height = "600px",
+  style = "border:none;"
+  )
+```
+
+What can be observed when comparing these three models is that first
+
+# Discussion
+
+-   difference between the models
+
+    -   agency and decision maker varies (decision_maker not significant
+        in medical context but significant for FP - agency strongly
+        associated in medical context but not really in FP context)
+
+    -   age and n_birth are highly significant in medical context but
+        not so much for family planning
+
+    -   "Classic" predictors of contraceptive use are not so much
+        associated with the medical context, in comparison to FP
+        context.
+
+-   why age (and n_birth) is significant only in medical context
+
+-   issue with the fear of SE variable
+
+-   8% of the sample fears issues related to fertility when using FP
+
+-   drinking unboiled milk have been often reported as a cause of
+    leishmaniasis
+
+What can be taken out of this table is first that a strong and
+significant difference exists between the proportion compared (McNemar
+Chi-Squared = 8.6, p-value = 0.0032). The absolute difference further
+confirm the direction of this difference, with future intentions to use
+contraceptive for family planning being 6.5% lower than intention to use
+contraceptives alongside leishmaniasis treatment (CI = -10.9%, - 2.2%).
+This tends to indicate that decision related to using contraceptives in
+these two different contexts are actually taken differently, and
+identifying predictors related to these two phenomenon are further
+inquired in the subsequent section.
