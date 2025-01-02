@@ -272,7 +272,7 @@ purpose).
 
 ```{r echo=FALSE}
 htmltools::tags$iframe(
-  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_treatment_ord2.html"),
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/finalfit_tables/gt_finalfit_treatment.html"),
   width = "100%",
   height = "600px",
   style = "border:none;"
@@ -318,7 +318,7 @@ associated with the outcome.
 
 ```{r Table 5, echo=FALSE}
 htmltools::tags$iframe(
-  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_intentionFP_ord.html"),
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/finalfit_tables/gt_finalfit_FP.html"),
   width = "100%",
   height = "600px",
   style = "border:none;"
@@ -329,7 +329,7 @@ htmltools::tags$iframe(
 
 ```{r Table 6, echo=FALSE}
 htmltools::tags$iframe(
-  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/gt_AORs_ever_ord.html"),
+  src = here::here("C:/Kenya_anaylsis_Rproject/Project_outputs/outputs_touse/tables/finalfit_tables/gt_finalfit_everused.html"),
   width = "100%",
   height = "600px",
   style = "border:none;"
