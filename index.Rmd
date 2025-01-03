@@ -48,22 +48,150 @@ Kacheliba and Sigor District Hospitals.
 
 ### 2.3 Inclusion and exclusion criteria
 
-#### Inclusion criteria
+**Inclusion criteria**
 
--   All women of reproductive age frequenting the Kacheliba or Sigor
-    District Hospitals
+-   WOCBP aged 15-49 years old living in endemic area covered by the
+    Kacheliba Hospital or Sigor Sub-County Hospital, irrespective of
+    their contraceptive use and/or pregnancy status.
+
+**Exclusion criteria**
+
+-   Women who, in the view of their treating physician (or the
+    investigator if medically qualified), are not medically fit to
+    participate.
 
 ### 2.4 Sample size calculation and sampling procedure
 
+The required sample size was estimated using a single population
+proportion formula, which result was adjusted using a finite population
+correction to account for the population size.
+
+As no quantitative data about contraceptive use acceptability in the
+context of medical treatment have been published in this region, an
+estimated proportion of 50% for contraceptive use acceptability when
+recommended for medical reasons was used to maximize variance.
+Confidence interval and the margin of error were set at 95% and 5%
+respectively. These calculations yield a sample size of 384
+participants, to which a finite population correction has been applied
+based on the Kacheliba and Sigor catchment populations, which
+respectively are 18,090 and 14,172 (facilities data, unpublished). For
+both figures, 21.4% was taken to estimate the sampling frame, which
+corresponds to the proportion of women of childbearing potential in the
+catchments, yielding a result of 6904. This correction resulted in an
+adjusted sample size of 364, to which a 10% non-response rate was added,
+resulting in final sample size of 401 participants. The formula
+mentioned here in the above are the following:
+
+*Single population proportion formula*
+
+$x = \frac{Z_{\frac{\alpha}{2}}^2 \cdot p \cdot (1-p)}{\text{MOE}^2}$
+
+*Finite population correction formula*
+
+$n = \frac{N \cdot x}{x + N - 1}$
+
+where *Z~α/2~* is the critical value of the Normal distribution at α/2
+(i.e. confidence interval), *p* is the estimated sample proportion,
+*MOE* is the margin of error and *N* is the sampling frame.
+
 ### 2.5 Data collection instrument
+
+A structured and pre-tested interview-based questionnaire was used to
+collect data, which includes closed-ended and open-ended questions. The
+questionnaire was administered on tablets by research assistants using
+the Kobo collect app. This instrument is available in Appendix I.
 
 ### 2.6 Data processing and analysis
 
+Data were entered, cleaned, coded and analysed using *Rstudio*, version
+2024.04.02 Build 764. Descriptive and analytic statistical procedures
+were applied.
+
+Analytic statistical procedures consisted firstly in a McNemar test of
+independence for paired proportions to examine independence between
+intentions to use contraceptives in the context of medical treatment
+(i.e. alongside medical treatment) and for family planning. Secondly,
+three models were created for the bivariate and multivariate logistic
+regression, including three different outcomes: intentions to use
+contraceptives when medically indicated alongside Kala-azar treatment,
+future intentions to use contraceptives for family planning, and ever
+usage of contraceptives. For each models, a forward stepwise selection
+based on the Akaike Information Criterion (AIC) was utilized to
+determine the best set of predictors. Finally, likelihood ratio tests
+were then performed to confirm the superiority of the final models over
+simpler ones.
+
 ### 2.7 Quality control
+
+Co-investigators introduced the data collection instrument to research
+assistants (RAs), and trained them to use them. RAs were given time to
+familiarize themselves with the instrument by performing role plays
+among temselves, and subsequently during the piloting of the tool.
+During data collection, daily meeting took place to provide a space for
+RAs to communicate to their peers and the co-investigators about their
+daily experience in administering the questionnaire, and voice any
+questions or issues encountered during the day.
 
 ### 2.8 Operational definitions
 
--   *Economic status*
+The instrument use to collect data analysed in the subsequent section is
+availble in appendix I. The description of variables which have
+constructed is found just below.
+
+-   **CU Intention alongside treatment**
+
+    Intentions to use contraceptive alongside medical treatment for
+    Kala-azar. A short prompt was provided to inform participants about
+    a potential situation where she could asked if she would be willing
+    to use contraceptives in this context (see Appendix I for the
+    prompt). This variable is evaluated using 4 modalities, in the form
+    of a likert scale (i.e. strongly likely, likely, unlikely, strongly
+    unlikely). To conduct a logistical regression using this variable as
+    outcome, this variable has been binarized as follows:
+
+    -   "Some intentions": participants who answered "Strongly likely"
+        or "Likely" to the CU intention alongside treatment variable.
+
+    -   "No intention": participants who answered "Unlikely" or
+        "Strongly unlikely" to the CU intention alongside treatment
+        variable.
+
+-   **CU intention during clinical trials**
+
+    Similar question to the previous one, but in the context of a
+    clinical trial and not during standard treatment. As for standard
+    treatment, a prompt was provided to respondents to give some context
+    (see Appendix I for the prompt). The same scale was used for the
+    answer's modalities than for the above question.
+
+-   **Future intentions to use FP**
+
+    This variable captures future intentions of participants to use
+    contraceptives in the context of family planning. This was evaluated
+    using a 4 point likert scale, similarly to the two variables
+    described above. To conduct a logistical regression using this
+    variable as outcome, this variable has been binarized as follows:
+
+    -   "Some intentions": participants who answered "Strongly likely"
+        or "Likely" to the "Future intentions to use FP" variable.
+
+    -   "No intention": participants who answered "Unlikely" or
+        "Strongly unlikely" to the "Future intentions to use FP"
+        variable.
+
+-   **Ever used**
+
+    This variable was created to capture whether respondent ever used
+    contraceptives throughout their life. It is build from two
+    questions, one asking about participants current use of
+    contraceptives, and another one asking respondents about their past
+    use. This latter question was only asked to respondents who reported
+    not using any contraceptive method currently. Participants who
+    reported either using a contraceptive method currently, or used some
+    in the past, where assigned a "Yes" to the ever used variable, while
+    other were assigned a "No".
+
+-   **Economic status**
 
     Economic status has been built from two variables, one asking about
     respondent's monthly income, and in case respondents did not now
@@ -75,7 +203,7 @@ Kacheliba and Sigor District Hospitals.
     income equal or above KSH 200,000, or monthly spending equal or
     above 50,000).
 
--   *Knowledge of Kala-azar*
+-   **Knowledge of Kala-azar**
 
     Knoweldge related to Kala-azar has been built from different
     questions related to Kala-azar means of transmission and symptoms.
@@ -93,7 +221,7 @@ Kacheliba and Sigor District Hospitals.
     -   "Complete knowledge": participants who know both at least one
         symptoms and means of transmission associated with Kala-azar.
 
--   *Experience of Kala-azar*
+-   **Experience of Kala-azar**
 
     This variable classifies participants based on how much they have
     been in contact, or heard about, people sick with Kala-azar. It
@@ -108,7 +236,7 @@ Kacheliba and Sigor District Hospitals.
     -   "No contract": participants who neither have seen/heard about
         someone infected or who died of Kala-azar.
 
--   *Feared treatment-realted consequences*
+-   **Feared treatment-related consequences**
 
     Number of consequences associated with Kala-azar treatment feared by
     participants (e.g. pain related to injections, prolonged hospital
@@ -121,7 +249,7 @@ Kacheliba and Sigor District Hospitals.
     -   "Moderate/high concerns": participants who expressed fearing
         more than 1 treatment related consequences.
 
--   *Knowledge of contraceptive methods*
+-   **Knowledge of contraceptive methods**
 
     Number of contraceptive methods known by participants, which
     includes 3 modalities:
@@ -135,7 +263,7 @@ Kacheliba and Sigor District Hospitals.
     -   "High knowledge": participants who reported knowing more than 4
         contraceptive methods.
 
--   *Fear of side effects*
+-   **Fear of side effects**
 
     This variable follows the framing tested and validated by Zan &
     Rossier (2024). It rests on two questions: one related to the number
@@ -157,11 +285,71 @@ Kacheliba and Sigor District Hospitals.
     -   "High fear": participants whose responses yield a results
         ranging from 0.67 to 1.
 
--   CU approval
+-   **Contraceptive use approval**
 
--   CU agency
+    This variable follows the framing tested and validated by Zan &
+    Rossier (2024). It is build on three questions related to the
+    approval of the use of contraceptive within a couple in different
+    context: to prevent birth, to space birth and to limit birth. These
+    questions are evaluated on a 5 points likert scale which are
+    assigned a value between 1 and 5 (with "Strongly agree" being
+    assigned a value of 5 and "Strongly disagree" a value of 1). The
+    value of the three questions have then been summed up for each
+    participant, and thus yields a value varying between 3 and 15. This
+    continuous indicator has then been framed in the following three
+    modalities:
 
--   Decision maker
+    -   "Low approval": participants whose answers yield a value varying
+        between 3 and 6.
+
+    -   "Medium approval": participants whose answers yield a value
+        varying between 7 and 10.
+
+    -   "High approval": participants whose answers yield a value above
+        10.
+
+-   **Contraceptive use agency**
+
+    This variable follows the framing tested and validated by Zan &
+    Rossier (2024). It has been framed following the same process than
+    for the contraceptive use approval variable described above (i.e.
+    the values associated to the likert scale modalities are summed up
+    to form a single value) - however, this variable rests on 5
+    questions related to contraceptive use agency, yielding a single
+    value varying between 5 and 25. This continuous indicator has then
+    been framed in the following three modalities:
+
+    -   "Low agency": participants whose answers yield a value varying
+        between 5 and 13.
+
+    -   "Medium agency": participants whose answers yield a value
+        varying between 14 and 19.
+
+    -   "High approval": participants whose answers yield a value above
+        19.
+
+-   **Decision maker**
+
+    This variable has been framed from two variables asking about the
+    ability of respondents to decide using contraceptives for
+    themselves. The first one ask about whose taking such a decision
+    (e.g. herself, their partner, herself and their partner jointly).
+    Respondents who answered "Respondent and partner jointly" where then
+    ask whose opinion between themselves and their partners matters the
+    most in such decisions. The final decision maker variable includes
+    two modalities:
+
+    -   "Respondent": participants who expressed that they are taking
+        decision related to their own use of contraceptives themselves,
+        or, if respondents expressed that this decision is taken
+        jointly, that their own opinion matters more or equally to the
+        one of their partner concerning this topic.
+
+    -   "Husband or someone else": participants who reported that their
+        partner of someone else is taking decision related to their own
+        use of contraceptives, or, if respondents expressed that this
+        decision is taken jointly, that the opinion of their partner
+        matters more than their own concerning this topic.
 
 # 3. Results
 
