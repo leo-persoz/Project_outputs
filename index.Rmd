@@ -63,32 +63,99 @@ Kacheliba and Sigor District Hospitals.
 
 ### 2.8 Operational definitions
 
--   Economic status
+-   *Economic status*
 
--   Knowledge of Kala-azar
+    Economic status has been built from two variables, one asking about
+    respondent's monthly income, and in case respondents did not now
+    their monthly income, they were asked about their monthly spending.
+    The final economic status variable includes three modalities: low
+    (monthly income \< KSH 23,670 or monthly spending \< KSH 4,999),
+    medium (monthly income above KSH 23,670 but less than KSH 200,000,
+    or monthly spending between KSH 5,000 and 49,999) and high (monthly
+    income equal or above KSH 200,000, or monthly spending equal or
+    above 50,000).
 
--   Experience of Kala-azar
+-   *Knowledge of Kala-azar*
 
--   N of consequences feared
+    Knoweldge related to Kala-azar has been built from different
+    questions related to Kala-azar means of transmission and symptoms.
+    It includes four modalities:
 
--   contraceptive knowledge
+    -   "No knowledge": participants who reported not knowing Kala-azar
+        as a disease.
 
-    -   0-1 low
+    -   "Transmission knowledge": participants who know at least one
+        mean of transmission of Kala-azar.
 
-    -   2-4 moderate
+    -   "Symptom knowledge": participants who know at least one symptom
+        related to Kala-azar.
 
-    -  > 5 high
+    -   "Complete knowledge": participants who know both at least one
+        symptoms and means of transmission associated with Kala-azar.
 
--   fear of side effects
+-   *Experience of Kala-azar*
 
-    -   total of side effect feared divided by the total of side effects
-        known, varying between 0 and 1.
+    This variable classifies participants based on how much they have
+    been in contact, or heard about, people sick with Kala-azar. It
+    includes three modalities:
 
-        -   0-0.33 low fear
+    -   "Seen/heard of sickness": participants who report having seen or
+        heard about someone with Kala-azar infection.
 
-        -   0.34-0.66 moderate fear
+    -   Seen/heard of death": participants who report having seen or
+        heard about someone dying from Kala-azar infection.
 
-        -   0.67-1 high fear
+    -   "No contract": participants who neither have seen/heard about
+        someone infected or who died of Kala-azar.
+
+-   *Feared treatment-realted consequences*
+
+    Number of consequences associated with Kala-azar treatment feared by
+    participants (e.g. pain related to injections, prolonged hospital
+    stay, anxiousness/depression). This variable includes two
+    categories:
+
+    -   "No/low concerns": participants who reported fearing not more
+        than one treatment related consequence.
+
+    -   "Moderate/high concerns": participants who expressed fearing
+        more than 1 treatment related consequences.
+
+-   *Knowledge of contraceptive methods*
+
+    Number of contraceptive methods known by participants, which
+    includes 3 modalities:
+
+    -   "Low knowledge": participants who reported knowing between 0 and
+        2 contraceptive methods.
+
+    -   "Moderate knowledge": partcipants who reported knowing between 3
+        and 4 contracptive methods.
+
+    -   "High knowledge": participants who reported knowing more than 4
+        contraceptive methods.
+
+-   *Fear of side effects*
+
+    This variable follows the framing tested and validated by Zan &
+    Rossier (2024). It rests on two questions: one related to the number
+    of side effects known by respondent and the number of these that are
+    feared. The number of side effects feared is then divided by the
+    number of side effect known, which yields a scale varying between 0
+    and 1 (0 expressing no concerns, and 1 expressing the highest level
+    of concern). Participants who reported knowing no side effects where
+    considered as having no fear (i.e. a value of 0 for this variable).
+    This continuous indicators has then been classified in three
+    modalities for better understanding:
+
+    -   "Low fear": participants whose responses yield a result ranging
+        from 0 to 0.33.
+
+    -   "Moderate fear": participants whose responses yield a result
+        ranging from 0.34 to 0.66.
+
+    -   "High fear": participants whose responses yield a results
+        ranging from 0.67 to 1.
 
 -   CU approval
 
@@ -116,7 +183,12 @@ htmltools::tags$iframe(
 
 #### *Socio-demographic variables*
 
-Concerning the age of participants, close to half of the sample is between 18 and 24 years old, and the teenager category is the least represented modality within the sample (21 participants, 5.2%). Most participants gave birth to 1 or 2 children (n = 166, 41.4%), which tends to be quite in line with the age distribution of the sample (i.e. 43.1% of participants have between 18 and 24 years old). 
+Concerning the age of participants, close to half of the sample is
+between 18 and 24 years old, and the teenager category is the least
+represented modality within the sample (21 participants, 5.2%). Most
+participants gave birth to 1 or 2 children (n = 166, 41.4%), which tends
+to be quite in line with the age distribution of the sample (i.e. 43.1%
+of participants have between 18 and 24 years old).
 
 A majority of participants are living in rural areas (92.3%), sedentary
 (65.8%), and of Christian confession (96.8%). Furthermore, Almost half
@@ -151,7 +223,6 @@ decision makers related their use of contraceptives (75.1%), and 10.7%
 reported to have been pressured to give birth at some point in the past.
 
 ##### Figure 1
-
 
 ```{r Figure 1, echo=FALSE}
 N_ever_user <- sum(!is.na(graphs_dataset$use_type))
@@ -253,7 +324,6 @@ htmltools::tags$iframe(
   style = "border:none;"
   )
 ```
-
 
 ## Multivariate analysis
 
