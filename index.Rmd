@@ -306,7 +306,8 @@ constructed is found just below.
         varying between 7 and 10.
 
     -   "High approval": participants whose answers yield a value above
-        10.
+
+        10. 
 
 -   **Contraceptive use agency**
 
@@ -326,7 +327,8 @@ constructed is found just below.
         varying between 14 and 19.
 
     -   "High approval": participants whose answers yield a value above
-        19.
+
+        19. 
 
 -   **Decision maker**
 
@@ -533,9 +535,9 @@ Table 5 includes future intentions to use contraceptives as outcome,
 while Table 6 includes ever use of contraceptive as outcome. These
 models have been set up in order to compare the difference in predictors
 for each outcome, thereby allowing to identify difference in factors
-influencing contraceptives use intentions (and behavior for ever use) in
-these different contexts (for medical reasons and for family planning
-purpose).
+influencing contraceptives use intentions (and behavior, for ever usage)
+in these different contexts (for medical reasons and for family planning
+purposes).
 
 ##### Table 4
 
@@ -550,18 +552,17 @@ htmltools::tags$iframe(
 
 Concerning the psychosocial predictors included in the model described
 in Table 4, all categories related to the approval of contraceptive use
-and agency with regard to contraceptive use are highly negatively
-associated with intention to use contraceptives alongside medical
-treatment (all p-values under 0.01) - fear of side effects seems to be
-positively associated with the outcome (although in a less significant
-manner as shown by the p-value). Similarly, ever use of contraceptives
-is also positively associated with the outcome. However, it is important
-to note that the ability of participants to decide using contraceptives
-for herself (i.e. decision making variable) is not associated with
-intention to use contraceptives alongside medical treatment, as shown by
-the odds ratio and p-value. Furthermore, knowledge of contraceptive
-shows no association with intention to use contraceptives alongside
-medical treatment.
+and agency with regard to contraceptive use are negatively associated
+with intention to use contraceptives alongside medical treatment. Fear
+of side effects seems to be positively associated with the outcome
+(although in a less significant manner as shown by the higher p-value).
+Similarly, ever use of contraceptives is also positively associated with
+the outcome. However, it is important to note that the ability of
+participants to decide using contraceptives for herself (i.e. decision
+making variable) is not associated with intention to use contraceptives
+alongside medical treatment, as shown by the odds ratio and p-value.
+Furthermore, knowledge of contraceptive shows no association with
+intention to use contraceptives alongside medical treatment.
 
 For socio-demographic predictors, no age category is significantly
 associated with the outcome, while only one category of the number of
@@ -590,7 +591,12 @@ htmltools::tags$iframe(
   )
 ```
 
-xxxxxxxx
+Table 5 summarize the output of a logistic regression model which
+includes future intentions to use contraceptives for family planning
+purpose as outcome. It also
+
+three predictors included in the model show a significant associations
+with this When considering as outcome,: age
 
 ##### Table 6
 
