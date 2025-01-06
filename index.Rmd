@@ -593,10 +593,15 @@ htmltools::tags$iframe(
 
 Table 5 summarize the output of a logistic regression model which
 includes future intentions to use contraceptives for family planning
-purpose as outcome. It also
+purpose as outcome. It also excludes disease-related predictors that
+were include in the model output in Table 4, as they are not relevant to
+contraceptive outside a medical context. Three predictors included in
+the model show significant associations with the outcome: number of
+birth(s), contraceptive approval and contraceptive use decision making
+ability.
 
-three predictors included in the model show a significant associations
-with this When considering as outcome,: age
+Only two modalities of the number of birth(s) variables significantly
+predicts the outcomes, namely 1-2 children and 3-4
 
 ##### Table 6
 
