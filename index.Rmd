@@ -5,7 +5,7 @@ output:
     theme: architect
     toc: true
     self_contained: TRUE
-author: "Léo Persoz (DNDi, UNIGE)"
+author: "DNDi, Amref, UNIGE"
 date: "December 2024"
 editor_options: 
   chunk_output_type: inline
