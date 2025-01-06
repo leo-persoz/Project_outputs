@@ -11,6 +11,7 @@ editor_options:
   chunk_output_type: inline
   markdown: 
     wrap: 72
+bibliography: references.bib
 ---
 
 ```{r install, include=FALSE}
@@ -23,7 +24,112 @@ pacman::p_load(tidyverse,
 graphs_dataset <- read_csv(here("C:/Kenya_anaylsis_Rproject/Project_outputs/data/graphs_dataset.csv"))
 ```
 
-# 2. Methodology
+# 1. Introduction
+
+### 1.1 Background
+
+Leishmaniasis is a vector-borne parasitic disease affecting up to one
+million people annually, mostly neglected populations living in rural
+areas with poor access to health care [@burza2018]. It exists primarily
+in two forms: visceral leishmaniasis, which is the most severe
+manifestation of the disease and can lead to death, and cutaneous
+leishmaniasis, which is the most common manifestation of the disease and
+is associated with social stigma as well as depression, anxiety, and
+other mental health conditions [@burza2018]. The main endemic areas for
+visceral leishmaniasis are Eastern Africa, South Asia, and Latin America
+(mostly in Brazil), while cutaneous leishmaniasis is principally found
+in Latin America, the Middle East, and North Africa. Treatments for
+leishmaniasis presents the limitations of being parenteral drugs with
+risk of severe side effects. The only oral drug available, miltefosine,
+has gastro-intestinal side effects and, more importantly, is potentially
+teratogenic [@dorlo2012]. This necessitates WOCBP to use mandatory
+contraception during and after treatment for approximately five months.
+Furthermore, research is currently testing new oral short treatments for
+leishmaniasis, but as they need to be assessed for reprotoxicity risks,
+the use of contraception is also required during these clinical trials.
+This represents a substantive access barrier for WOCBP to both treatment
+and participation in clinical trials, which respectively limit access to
+the best treatment available, and limit evidence on effectiveness and
+safety of potentially teratogenic drugs such as miltefosine among WOCBP.
+Therefore, there is a need to inquire about acceptability rate of
+contraceptive use when medically indicated alongside treatment for
+leishmaniasis, and by extrapolation, for NTDs at large.
+
+There is no available empirical estimate of the prevalence of
+leishmaniasis in West Pokot. However, the number of visceral
+leishmaniasis cases treated in Kacheliba Sub-County Hospital, which was
+the only centre providing treatment for visceral leishmaniasis at that
+time, was 645 in 2022.  Regarding contraceptive use, modern methods rate
+was estimated at 23.2% in 2022, with implants (11.7%) and injections
+(8.3%) being the most used methods in this county – unmet needs were
+estimated at 30.3%
+[@kenyanationalbureauofstatisticsnairobikenyaministryofhealthnairobikenyaandthedhsprogramicfrockvillemarylandusa2023].
+This latter rate was estimated at 13.3% in 2014
+[@kenyanationalbureauofstatistics2015]. Some of the most salient reasons
+hindering the use of contraceptives in this region have been reported to
+be strongly related to religious and cultural beliefs around family
+planning, and low access to health facilities [@oscarkakai2022]. The
+total fertility rate was estimated at 5.3 children per women in West
+Pokot in 2023, while it was 3.3 in Kenya in 2022
+[@kenyanationalbureauofstatisticsnairobikenyaministryofhealthnairobikenyaandthedhsprogramicfrockvillemarylandusa2023a;
+@countygovernmentofwestpokot2022b]. The National Council for Population
+Development (NCPD) suggests that this high fertility rate fuels poverty
+and food insecurity [@oscarkakai2022].
+
+Requiring to use contraceptives has also been reported as a barrier to
+WOCBP’s participation in clinical trials [@couderc-pétry2020;
+@milliez2009]. In a Phase 3 clinical trial in Eastern Africa, the
+non-inferiority of a paromomycin and miltefosine regimen was assessed
+against a sodium stibogluconate and paromomycin combination for treating
+visceral leishmaniasis. Authors noted that the low participation of
+women relative to men is likely to be due to the requirement of using
+contraceptives, especially in West Pokot [@musa2023].
+
+This report consists in an intermediary overview of the quantitative
+results of a partcipatory mixed methods project about medically
+indicated contraceptive use conducted in West Pokot, Kenya. These
+results will be used to inform the qualitative strand of this project in
+two ways. First, it will provide information about the sampling of the
+participants to the in-depths interviews (IDIs) - for instance, a
+profile of interest with regards to the research objectives of this
+project is women who reports intentions to use contraceptive for family
+planning matters but not alongside treatment. Selecting women displaying
+such an intention pattern to participate to IDIs could provide the
+research team the possibility to inquire about the precise reason
+explaining this specific pattern. Secondly, the results of this
+quantitative analysis will provide avenues to refine the content of the
+qualitative tools. After the qualitative data will have been collected
+and analyzed, quantitative and qualitative data will be integrated to
+provide an holistic understanding of rate of acceptability of medically
+indicated contraceptive use as well as the reasons for use and non-use,
+on which recommendation will be framed in collaboration with members of
+the West Pokot community.
+
+### 1.2 Objectives
+
+#### General objective
+
+-   To assess the acceptability of WOCBP to use modern contraceptives
+    when medically indicated during standard treatment for leishmaniasis
+    as well as during clinical trials in West Pokot, Kenya.
+
+#### Specific objectives
+
+-   What is the rate of intention to use contraceptive when medically
+    indicated and in the context of clinical trials for the treatment of
+    leishmaniasis among WOCBP visiting the Kacheliba and Sigor
+    Sub-County Hospitals?
+
+-   Is there a difference in intention to use modern contraceptive
+    methods when medically indicated for leishmaniasis treatment versus
+    future intention to use contraceptive for family planning among
+    WOCBP visiting the Kacheliba and Sigor Sub-County Hospitals?
+
+-   What factors, if any, are associated with utilization of modern
+    conceptive methods when recommended alongside medical treatment, as
+    well as in the context of medical treatments?
+
+# 2. Methods
 
 ### 2.1 Study design and period
 
@@ -537,7 +643,11 @@ models have been set up in order to compare the difference in predictors
 for each outcome, thereby allowing to identify difference in factors
 influencing contraceptives use intentions (and behavior, for ever usage)
 in these different contexts (for medical reasons and for family planning
-purposes).
+purposes). At the bottom of each table, the Akaike Information Criterion
+(AIC), which balances model complexity and predictive power, and the
+McFadden R-squared, which indicates the part of the outcomes' variance
+explained by the predictors, are reported to assess overall model
+performance.
 
 ##### Table 4
 
@@ -593,15 +703,38 @@ htmltools::tags$iframe(
 
 Table 5 summarize the output of a logistic regression model which
 includes future intentions to use contraceptives for family planning
-purpose as outcome. It also excludes disease-related predictors that
+purpose as outcome. This means that in this case, intentions to use
+contraceptives are still the phenomenon of interest, but outside a
+purely medical context. It also excludes disease-related predictors that
 were include in the model output in Table 4, as they are not relevant to
 contraceptive outside a medical context. Three predictors included in
 the model show significant associations with the outcome: number of
 birth(s), contraceptive approval and contraceptive use decision making
 ability.
 
-Only two modalities of the number of birth(s) variables significantly
-predicts the outcomes, namely 1-2 children and 3-4
+Only two modalities of the parity variable significantly predict the
+outcome, namely 1-2 children and 3-4 children, which indicates that
+after controlling for the effects of other predictors, women who have
+between 1-2 and 3-4 children were respectively 4.27 and 6.04 times more
+likely to report intentions to use contraceptives for family planning
+purposes than nulliparious women. Regarding approval of contraceptive
+use, women showing low and medium approval were 88% and 64% less likely
+to report future intentions to use contraceptives for family planning
+purposes than women showing high approval. This shows a negative
+association between contraceptive use approval and the outcome. Lastly,
+women who reported taking decisions related to their own use of
+contraceptives themselves were 3.37 times more likely to report having
+future intentions to use contraceptives for family planning purposes
+than women who stipulated that their husband (or someone else) usually
+takes decision on this matter. In relation to this, it is interesting to
+note that contraceptive use agency is not significantly associated with
+the outcome in this model. This contrast with the results displayed in
+Table 4 where the opposite was the case: while contraceptive use agency
+was positively associated with intentions to use contraceptives
+alongside medical treatment, the decision making variable was not
+significantly associated with this latter outcome. Potential avenues
+explaining this difference will be described in the discussion section
+below.
 
 ##### Table 6
 
@@ -614,7 +747,44 @@ htmltools::tags$iframe(
   )
 ```
 
-xxxxxxxxx
+Table 6 reports the output of a model which includes the same predictors
+as the ones included in the model related to Table 5, but with ever
+usage of contraceptive as outcome instead of future intentions to use
+contraceptives for family planning purposes. This means that in this
+particular case, intentions are not the phenomenon of interest, but an
+actual behavior. In this context, 6 predictors showed associations with
+the outcome: age, lifestyle, education level, knowledge of contraceptive
+methods, contraceptive use approval and contraceptive use decision
+making ability.
+
+Regard sociodemographic predictors, women between 30 and 39 years old
+were 4.67 times more likely to report having ever used contraceptives
+than the reference category (i.e. women between 15 and 17 years old)
+after accounting for other predictors. Women reporting a sedentary
+lifestyle also displayed higher odds to have ever used contraceptives
+than nomadic women. Furthermore, education level was also positively
+associated with ever use of contraceptive, with the strength of the
+associations incrementally increasing as the level of formal education
+increases: women who completed primary education were 1.91 times more
+likely to reported having ever used contraceptives, and women who
+completed secondary education or higher were 2.85 times more likely to
+report having ever used contraceptives, than women who did not attend
+the formal education system.
+
+Concerning contraceptive use related predictors, women displaying low
+knowledge about contraceptives use were 68% less likely to report having
+ever used contraceptives than women with high knowledge on this topic,
+after adjusting for other predictors. Medium knowledge level category
+was however not associated with ever usage of contraceptives. Similarly,
+women showing low approval of contraceptive use were 26% less likely to
+reported having ever used contraceptives compared to women displaying
+high approval - medium approval was not significantly associated with
+the outcome. Finally, as in the case of the results displayed in Table
+5, while contraceptive use agency was not associated with ever usage,
+women who reported having the ability to decide on their own whether or
+not to use contraceptives for themselves were 2.69 times more likely to
+have ever used contraceptives than women whose husband (or someone else)
+takes this decision.
 
 # Discussion
 
@@ -626,14 +796,9 @@ Points to discuss:
         in medical context but significant for FP - agency strongly
         associated in medical context but not really in FP context)
 
-    -   age and n_birth are highly significant in medical context but
-        not so much for family planning
-
     -   "Classic" predictors of contraceptive use are not so much
         associated with the medical context, in comparison to FP
         context.
-
--   why age (and n_birth) is significant only in medical context
 
 -   issue with the fear of SE variable
 
@@ -645,3 +810,5 @@ Points to discuss:
 -   Most of participants expressing having some intentions to use
     contraceptives in medical context would be willing to do so for a
     period of up to 6 months
+
+# References
