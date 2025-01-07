@@ -213,19 +213,24 @@ Data were entered, cleaned, coded and analysed using *Rstudio*, version
 2024.04.02 Build 764. Descriptive and analytic statistical procedures
 were applied.
 
-Analytic statistical procedures consisted firstly in a McNemar test of
-independence for paired proportions to examine independence between
-intentions to use contraceptives in the context of medical treatment
-(i.e. alongside medical treatment) and for family planning. Secondly,
-three models were created for the bivariate and multivariate logistic
-regression, including three different outcomes: intentions to use
-contraceptives when medically indicated alongside Kala-azar treatment,
-future intentions to use contraceptives for family planning, and ever
-usage of contraceptives. For each models, a forward stepwise selection
-based on the Akaike Information Criterion (AIC) was utilized to
-determine the best set of predictors. Finally, likelihood ratio tests
-were then performed to confirm the superiority of the final models over
-simpler ones.
+Analytic statistical procedures began with a McNemar test of
+independence for paired proportions to examine whether intentions to use
+contraceptives differed depending on their context of use—specifically,
+in the context of medical treatment (e.g., alongside Kala-azar
+treatment) versus family planning. Subsequently, three models were
+constructed to run bivariate and multivariate logistic regressions, with
+outcomes including: intentions to use contraceptives when medically
+indicated alongside Kala-azar treatment, future intentions to use
+contraceptives for family planning, and ever usage of contraceptives.
+After verifying the absence of multicollinearity, these models included
+variables selected based on the theoretical framework guiding this study
+to ensure alignment with its conceptual foundations. To complement this
+theoretically driven approach, a forward stepwise selection using the
+Akaike Information Criterion (AIC) was applied to each of the three
+models. The results of this data-driven modeling were not directly
+presented in this report but were incorporated into the discussion to
+provide additional insights and to contrast with the theoretically
+driven findings
 
 ### 2.7 Quality control
 
@@ -621,16 +626,18 @@ htmltools::tags$iframe(
   )
 ```
 
-What can be taken out of this table is that a strong and significant
-difference exists between the proportion compared (McNemar Chi-Squared =
-8.67, p-value = 0.0032). The absolute difference, which indicates the
-net difference between the two proportions, further confirm the
-direction and significance of this difference. Future intentions to use
-contraceptive for family planning are 6.5% lower than intention to use
-contraceptives alongside Kala-azar treatment. The confidence interval
-[-10.9%, -2.2%] indicates that the true difference in proportions is
-unlikely to include 0, further supporting the significance of the
-result.
+The rows in Table 3 corresponds to intentions to use contraceptives for
+family planning purposes, while the columns corresponds to intentions to
+use contraceptives alongside medical treatment. What can be taken out of
+this table is that a strong and significant difference exists between
+the proportion compared (McNemar Chi-Squared = 8.67, p-value = 0.0032).
+The absolute difference, which indicates the net difference between the
+two proportions, further confirm the direction and significance of this
+difference. Future intentions to use contraceptive for family planning
+are 6.5% lower than intention to use contraceptives alongside Kala-azar
+treatment. The confidence interval [-10.9%, -2.2%] indicates that the
+true difference in proportions is unlikely to include 0, further
+supporting the significance of the result.
 
 ## Multivariate analysis
 
@@ -644,7 +651,7 @@ for each outcome, thereby allowing to identify difference in factors
 influencing contraceptives use intentions (and behavior, for ever usage)
 in these different contexts (for medical reasons and for family planning
 purposes). At the bottom of each table, the Akaike Information Criterion
-(AIC), which balances model complexity and predictive power, and the
+(AIC), which balances model's complexity and goodness-of-fit, and the
 McFadden R-squared, which indicates the part of the outcomes' variance
 explained by the predictors, are reported to assess overall model
 performance.
@@ -661,34 +668,46 @@ htmltools::tags$iframe(
 ```
 
 Concerning the psychosocial predictors included in the model described
-in Table 4, all categories related to the approval of contraceptive use
-and agency with regard to contraceptive use are negatively associated
-with intention to use contraceptives alongside medical treatment. Fear
-of side effects seems to be positively associated with the outcome
-(although in a less significant manner as shown by the higher p-value).
-Similarly, ever use of contraceptives is also positively associated with
-the outcome. However, it is important to note that the ability of
-participants to decide using contraceptives for herself (i.e. decision
-making variable) is not associated with intention to use contraceptives
-alongside medical treatment, as shown by the odds ratio and p-value.
-Furthermore, knowledge of contraceptive shows no association with
-intention to use contraceptives alongside medical treatment.
+in Table 4, all categories related to approval and agency with regards
+to contraceptive use are negatively associated with intention to use
+contraceptives alongside medical treatment. When taking into account
+contraceptive use approval for instance, respondents who showed low
+approval were 90% less likely than respondent showing high approval to
+hold intentions to use contraceptives alongside medical treatment. Fear
+of side effects is also positively associated with the outcome (although
+in a less significant manner as shown by the higher p-value):
+respondents showing low and medium fear of side effects were
+respectively 2.48 and 2.82 more likely to have intentions to use
+contraceptives alongside medical treatment than women displaying high
+fear of side effects. This result might seem surprising given that the
+odds of holding intentions to use contraceptives alongside treatment can
+be expected to be higher among the low fear category than the medium
+fear category - explanatory pathways of this unexpected results are
+covered in the discussion section. Similarly, ever use of contraceptives
+is also positively associated with the outcome. However, it is important
+to note that the ability of participants to decide using contraceptives
+for herself (i.e. the "decision making" variable) is not associated with
+intention to use contraceptives alongside medical treatment, as shown by
+the odds ratio and p-value. Furthermore, knowledge of contraceptive
+shows no significant association with intention to use contraceptives
+alongside medical treatment.
 
-For socio-demographic predictors, no age category is significantly
+For sociodemographic predictors, no age category is significantly
 associated with the outcome, while only one category of the number of
 birth variable (i.e. 5-6 children) is positively associated with the
-outcome. No other socio-demographic variable were associated with
+outcome. No other sociodemographic variable were associated with
 intention to use contraceptive alongside treatment in this model.
 
-Finally, disease related predictors also show some interesting results:
-as the number of concerns related to treatment consequences, intentions
-to use contraceptives for medical reasons increase. This is not
-surprising, since the treatment regiment for Kala-azar which does
-involve using contraceptives present more negative consequences than the
-regiment requiring to use contraceptives (a precision which was stated
-in the prompt of the question related to intention to use contraceptives
-alongside medical treatment). Knowledge of the Kala-azar appears however
-not be associated with this particular outcome.
+Regarding disease related predictors, : as the number of concerns
+related to treatment consequences, intentions to use contraceptives for
+medical reasons increase. This is not surprising, since the treatment
+regiment for Kala-azar which does not involve using contraceptives (i.e.
+sodium stibogluconate and paromomycin combination) presents more
+negative consequences than the regiment requiring to use contraceptives
+(i.e. paromomycin and miltefosine). This precision was stated when
+prompting the question related to intention to use contraceptives
+alongside medical treatment. Knowledge of the Kala-azar appears however
+not be associated with the model's outcome.
 
 ##### Table 5
 
@@ -788,7 +807,7 @@ takes this decision.
 
 # Discussion
 
-Points to discuss:
+Some possible avenues to be discussed:
 
 -   difference between the models
 
@@ -800,7 +819,8 @@ Points to discuss:
         associated with the medical context, in comparison to FP
         context.
 
--   issue with the fear of SE variable
+-   "issue" with the fear of SE variable: output of the forward stepwise
+    selection
 
 -   8% of the sample fears issues related to fertility when using FP
 
