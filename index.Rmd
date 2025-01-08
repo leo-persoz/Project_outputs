@@ -807,6 +807,22 @@ takes this decision.
 
 # Discussion
 
+Overall, the findings of the quantitative phase of this mixed methods
+project demonstrate on the one hand that acceptability of contraceptives
+in a medical context (i.e. alongside standard treatment and during
+clinical trials) is higher than both contraceptives use behaviors (i.e.
+current use and ever usage) and future intentions to use contraceptives
+for family planning. On the other hand, multivariate analyses (Table 4,
+5 and 6) further demonstrate that among the sample surveyed in this
+study, different sets of predictors are associated with different
+contexts of contraceptive use. Indeed, while predictors that have shown
+to be often associated with contraceptive use (e.g. education level,
+decision making ability) are actually also associated with contraceptive
+use in our model (especially in terms of ever usage but also for future
+intentions to use contraceptives for family planning purposes), such
+predictors are not significantly associated with intentions to use
+contraceptives alongside medical treatment.
+
 Some possible avenues to be discussed:
 
 -   difference between the models
